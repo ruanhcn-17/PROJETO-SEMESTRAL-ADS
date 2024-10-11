@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste github</title>
+    <title>Football Streaming - Live Matches</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Arquivo de estilo CSS -->
 </head>
 <body>
-    <h1> Testes github </h1>
-    <p> Deivid </p>
+
+    <header>
+        <div class="logo">
+            <img src="https://img.icons8.com/color/48/000000/soccer-ball.png" alt="Football Logo">
+            <h1>Football Stream</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Live Matches</a></li>
+                <li><a href="#">Highlights</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2>Stream Your Favorite Matches</h2>
+            <p>Live football games, replays, and highlights, all in one place.</p>
+        </section>
+
+        <!-- Carrossel de jogos ao vivo -->
+        <section class="carousel">
+            <h3>Live Matches</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn">&#10094;</button>
+                <div class="carousel-content">
+                    <div class="game">
+                        <img src="https://via.placeholder.com/200x300?text=Game+1" alt="Game 1">
+                        <p>Team A vs Team B</p>
+                    </div>
+                    <div class="game">
+                        <img src="https://via.placeholder.com/200x300?text=Game+2" alt="Game 2">
+                        <p>Team C vs Team D</p>
+                    </div>
+                    <div class="game">
+                        <img src="https://via.placeholder.com/200x300?text=Game+3" alt="Game 3">
+                        <p>Team E vs Team F</p>
+                    </div>
+                </div>
+                <button class="carousel-btn right-btn">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Carrossel de destaques -->
+        <section class="carousel">
+            <h3>Highlights</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn">&#10094;</button>
+                <div class="carousel-content">
+                    <div class="game">
+                        <img src="https://via.placeholder.com/200x300?text=Highlight+1" alt="Highlight 1">
+                        <p>Best Goals of 2024</p>
+                    </div>
+                    <div class="game">
+                        <img src="https://via.placeholder.com/200x300?text=Highlight+2" alt="Highlight 2">
+                        <p>Top Saves</p>
+                    </div>
+                    <div class="game">
+                        <img src="https://via.placeholder.com/200x300?text=Highlight+3" alt="Highlight 3">
+                        <p>Memorable Matches</p>
+                    </div>
+                </div>
+                <button class="carousel-btn right-btn">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Football Stream &copy; 2024 - All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Arquivo JavaScript -->
 </body>
 </html>
