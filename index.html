@@ -1,12 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste github</title>
+    <title>Login - Live Football</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 400px; /* Para garantir que a largura seja adequada em dispositivos maiores */
+        }
+        .container img {
+            width: 150px;
+            margin-bottom: 20px;
+            border-radius: 50%; /* Torna a imagem redonda */
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        .input-group {
+            margin: 15px 0;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+        }
+        .input-group input:focus {
+            outline: none;
+            border: 1px solid #555;
+        }
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: black;
+            padding: 12px;
+            margin: 20px 0;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .btn:hover {
+            background-color: #ccc;
+        }
+        .social-btn {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .social-btn button {
+            flex: 1;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .social-btn button img {
+            width: 20px;
+            margin-right: 10px;
+        }
+        .social-btn button.google {
+            background-color: white;
+            color: black;
+        }
+        .social-btn button.facebook {
+            background-color: #4267B2;
+            color: white;
+        }
+        .link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1> Testes github </h1>7
-    <p> Projeto semestral </p>
+
+    <div class="container">
+        <!-- Imagem do logo Live Football redonda -->
+        <img src="https://th.bing.com/th/id/OIG2.ODOhqAp869rimzdPQcOs?pid=ImgGn" alt="Live Football">
+
+        <div class="input-group">
+            <label for="email">Informe o seu e-mail</label>
+            <input type="email" id="email" placeholder="Informe o seu e-mail">
+        </div>
+
+        <div class="input-group">
+            <label for="senha">Informe a sua senha</label>
+            <input type="password" id="senha" placeholder="Informe a sua senha">
+        </div>
+
+        <!-- Botão Continuar com cor branca -->
+        <button class="btn">Continuar</button>
+
+        <p>Ou escolha a opção</p>
+
+        <div class="social-btn">
+            <button class="google" onclick="loginGoogle()">
+                <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google"> Continuar com Google
+            </button>
+            <button class="facebook" onclick="loginFacebook()">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" alt="Facebook"> Continuar com Facebook
+            </button>
+        </div>
+
+        <p>Não tem conta? <a href="#" class="link">Criar conta</a></p>
+    </div>
+
+    <script>
+        // Função para o botão "Continuar com Google"
+        function loginGoogle() {
+            alert("Login com Google foi clicado!");
+            // Aqui você pode adicionar a lógica real para autenticação com o Google
+            window.location.href = "https://accounts.google.com/signin"; // Exemplo de redirecionamento para o Google
+        }
+
+        // Função para o botão "Continuar com Facebook"
+        function loginFacebook() {
+            alert("Login com Facebook foi clicado!");
+            // Aqui você pode adicionar a lógica real para autenticação com o Facebook
+            window.location.href = "https://www.facebook.com/login"; // Exemplo de redirecionamento para o Facebook
+        }
+    </script>
+
 </body>
 </html>
