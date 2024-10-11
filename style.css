@@ -28,7 +28,7 @@ body {
 }
 
 .logo span {
-    color: #0066cc;
+    color:  #db4437;
 }
 
 h2 {
@@ -96,7 +96,7 @@ input {
 
 button {
     padding: 10px;
-    background-color: #0066cc;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -106,7 +106,7 @@ button {
 }
 
 button:hover {
-    background-color: #0055aa;
+    background-color: #db4437;
 }
 
 .social-login {
